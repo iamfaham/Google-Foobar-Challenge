@@ -1,0 +1,20 @@
+# I Love Lance & Janice
+# Level 1 Foobar challenge 
+import string
+def solution(x):
+    # list_a contains a to z 
+    list_a = list(string.ascii_lowercase)\
+    # list_b contains a to z in reverse format
+    list_b = list(string.ascii_lowercase)[::-1]
+    sentence = ''
+    for i in x:
+        if i >= 'a' and i <= 'z':
+            index = list_a.index(i)
+            word = list_b[index]
+            sentence = sentence + word
+        else:
+            sentence = sentence + i
+            
+    print(sentence)
+            
+solution("Yvzs! I xzm'g yvorvev Lzmxv olhg srh qly zg gsv xlolmb!!")
